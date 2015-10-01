@@ -1,0 +1,7 @@
+{
+	"BaseDir": "SpeedControl",
+	"EntryPoint": "SpeedControl.Main",
+	"IsDevelopment": true,
+	"Name": "SpeedControl",
+	"Project": "SpeedControl.csproj"
+}
