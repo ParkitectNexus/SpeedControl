@@ -31,7 +31,8 @@ namespace SpeedControl
             var oldSpeed = Time.timeScale;
             Time.timeScale = newSpeed;
             Time.fixedDeltaTime = newSpeed >= 1.0f ? _defaultTimeStep : _defaultTimeStep * newSpeed;
-            UIEvents.Instance.RaiseOnTimeSpeedChanged(oldSpeed, newSpeed);
+
+            EventManager.Instance.RaiseOnTimeSpeedChanged(oldSpeed, newSpeed);
         }
 
 
