@@ -23,9 +23,11 @@ namespace SpeedControl
             _gameObject = null;
         }
 
+        public string Identifier { get; set; }
+        
         public string Name
         {
-            get { return "GuestCam"; }
+            get { return "Speed Control"; }
         }
 
         public string Description
